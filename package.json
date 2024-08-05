@@ -1,0 +1,30 @@
+{
+  "name": "personal-website-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \" tsc -W\"  \"nodemon build/index.js\"",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/lodash": "^4.17.1",
+    "@types/multer": "^1.4.11",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "mongoose": "^8.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
